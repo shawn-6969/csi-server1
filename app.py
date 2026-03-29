@@ -7,7 +7,7 @@ import os
 
 app = Flask(__name__)
 
-MODEL_PATH = os.path.join(os.path.dirname(__file__), "wifi_human_detector.h5")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "wifi_human_detector.keras")
 model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 print(f"Model loaded! Input shape: {model.input_shape}")
 
